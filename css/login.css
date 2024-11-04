@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100&family=Nunito:ital,wght@0,800;1,300&family=Poppins:ital,wght@0,300;1,300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+body {
+  position: relative;
+  scroll-behavior: smooth;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.login {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login .login_inner .page_title {
+  text-align: center;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+
+.login .login_inner .column_main {
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.customer_login {
+  border-right: 1px solid rgb(224, 224, 224);
+  padding-right: 50px;
+}
+
+.customer_login,
+.new_customer {
+  width: 45.8%;
+}
+
+.block_title h5,
+.new_customer .block_title {
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.customer_login .block_content .field-note,
+.new_customer .block_content p {
+  font-size: 20px;
+  color: #999;
+  margin: 5px 0;
+}
+
+.block_content .field-email,
+.block_content .field-pwd {
+  font-size: 17px;
+  font-weight: 300;
+  margin: 15px 0;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="type"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  outline: none;
+  border: 1px solid rgb(226, 226, 226);
+}
+
+.field-email span,
+.field-pwd span {
+  color: red;
+}
+
+.field-choice {
+  margin: 10px 0;
+}
+
+.field-choice label {
+  font-size: 17px;
+  text-transform: capitalize;
+  margin: 0 13px;
+}
+
+.actions_toolbar {
+  margin: 30px 0;
+}
+
+.actions_toolbar a {
+  display: inline-block;
+  width: 100%;
+  text-align: end;
+  color: #999;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.actions_toolbar .secondary {
+  width: 100%;
+}
+
+.secondary button {
+  width: 100%;
+  padding: 8px 0;
+  font-size: 17px;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: 1px solid #000;
+  /* margin: 15px 0; */
+  font-weight: 600;
+}
+
+.secondary button:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.actions_toolbar p {
+  color: red;
+  text-transform: capitalize;
+}
+
+.actions_toolbar .primary {
+  width: 100%;
+  margin: 30px 0;
+}
+
+.actions_toolbar .movecrt {
+  width: 100%;
+  display: inline-block;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #000;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 17px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.actions_toolbar .movecrt:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.backclick {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+  .login .login_inner .column_main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+  }
+
+  .login .login_inner .column_main .customer_login,
+  .login .login_inner .column_main .new_customer {
+    width: 100%;
+  }
+
+  .login .login_inner .column_main .customer_login {
+    border: none;
+    padding-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .login .login_inner .column_main {
+    padding: 0 25px;
+  }
+
+  .login .login_inner .column_main .customer_login {
+    border: none;
+    padding-right: 0px;
+  }
+}

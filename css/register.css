@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100&family=Nunito:ital,wght@0,800;1,300&family=Poppins:ital,wght@0,300;1,300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+html,
+body {
+  position: relative;
+  scroll-behavior: smooth;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.register {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register .register_inner .page_title {
+  padding-top: 20px;
+  font-size: 29px;
+  text-align: center;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+.register .register_inner .column {
+  width: 100%;
+  margin-top: 30px;
+}
+.register .register_inner .column_main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.register .register_inner .column_main .info {
+  border: 1px solid rgb(226, 226, 226);
+  padding: 20px;
+  margin: 10px 0;
+  width: calc(50% - 10px);
+}
+
+.register .register_inner .column_main .info .block_title {
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.register .register_inner .column_main .info .block_content .field {
+  font-size: 17px;
+  font-weight: 400;
+  margin: 15px 0;
+  text-transform: capitalize;
+}
+.register .register_inner .column_main .info .block_content .field .strength {
+  border: 1px solid #dfdfdf;
+  margin-top: -8px;
+  padding: 5px;
+  font-size: 18px;
+  color: #868686;
+  background-color: rgb(238, 238, 238);
+}
+input[type="type"],
+input[type="email"],
+input[type="password"],
+#user_type {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  outline: none;
+  border: 1px solid rgb(226, 226, 226);
+}
+
+.info .block_content .field span {
+  color: red;
+}
+
+.register .register_inner .column_main .info .block_content .field-choice {
+  margin: 20px 0;
+}
+.register
+  .register_inner
+  .column_main
+  .info
+  .block_content
+  .field-choice
+  label {
+  font-size: 17px;
+  text-transform: capitalize;
+  margin: 0 13px;
+}
+.actions_toolbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.actions_toolbar .btnn {
+  width: 100%;
+  margin: 10px 0;
+}
+.actions_toolbar .btnn button,
+.actions_toolbar .btnn a {
+  width: calc(100% - 4px);
+  background-color: #fff;
+  border: 1px solid #000;
+  font-size: 18px;
+  height: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  text-align: center;
+}
+.actions_toolbar .btnn a {
+  padding-top: 10px;
+}
+.actions_toolbar .btnn button:hover,
+.actions_toolbar .btnn a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+@media only screen and (max-width: 992px) {
+  .register .register_inner .column_main {
+    flex-direction: column;
+    padding: 0 50px;
+  }
+  .register .register_inner .column_main .info {
+    width: 100%;
+  }
+  .register .register_inner .actions_toolbar {
+    flex-direction: column;
+    padding: 0 50px;
+  }
+}
+@media only screen and (max-width: 765px) {
+  .register .register_inner .page_title {
+    line-height: 50px;
+    font-size: 20px;
+  }
+  .register .register_inner .column_main {
+    padding: 0 25px;
+  }
+  .register .register_inner .actions_toolbar {
+    padding: 0 25px;
+  }
+}
